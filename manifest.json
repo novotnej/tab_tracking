@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+
+  "name": "C-SED Tab tracking",
+  "description": "This extension tracks websites the user accesses (when the function is turned on) and reports them to the C-SED app",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "jquery-3.3.1.min.js",
+      "scripts.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://localhost/*"],
+      "js": [
+        "jquery-3.3.1.min.js",
+        "scripts.js"
+      ],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs"
+  ]
+}
