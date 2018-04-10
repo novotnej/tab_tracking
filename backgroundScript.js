@@ -48,7 +48,12 @@ function getCleanUrl(url) {
 }
 
 function sendMessage(message) {
+    var xhttp = new XMLHttpRequest();
+
+    xhttp.open("POST", "http://localhost:4567/tracker?message=" + message, true);
+    xhttp.send();
     log(message);
+
 }
 
 function sendStart(url) {

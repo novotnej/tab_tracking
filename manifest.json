@@ -3,7 +3,7 @@
 
   "name": "C-SED Tab tracking",
   "description": "This extension tracks websites the user accesses (when the function is turned on) and reports them to the C-SED app",
-  "version": "1.1",
+  "version": "1.2",
 
   "browser_action": {
     "default_icon": "icon.png",
@@ -28,6 +28,7 @@
   "permissions": [
     "activeTab",
     "storage",
-    "tabs"
+    "tabs",
+    "http://localhost/*"
   ]
 }
