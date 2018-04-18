@@ -3,8 +3,11 @@
 
   "name": "Focus Monster Tab tracker",
   "description": "This extension tracks websites the user accesses (when the function is turned on) and reports them to the C-SED app",
-  "version": "1.3",
-
+  "version": "1.4",
+  "icons": {
+    "32": "icon.png",
+    "48": "icon48.png",
+    "128": "icon128.png" },
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
